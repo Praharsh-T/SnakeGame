@@ -11,7 +11,7 @@ var startGame = null,
   snakeFood = null,
   speedSize = null,
   timer = null,
-  egg = ["images/apple1.png", "./images/mango.png", "images/pear.png"],
+  egg = ["images/egg.png", "./images/eggtwo.png", "images/eggthree.png"],
   eggEaten = null,
   imageIndex = Math.floor(Math.random() * 1000) % 3;
 
@@ -128,8 +128,8 @@ function writeScore() {
   gameAreaContext.font = "50px sans-serif";
   gameAreaContext.fillStyle = "#FF0000";
   gameAreaContext.fillText(
-    "Score " + playerScore,
-    gameAreaWidth / 2 - 100,
+    "Game Over",
+    gameAreaWidth / 2 - 130,
     gameAreaHeight / 2
   );
 }
@@ -137,7 +137,7 @@ function updateScoreDisplay(score) {
   scoreDisplay.textContent = "Score: " + score;
 }
 function createSquare(x, y) {
-  gameAreaContext.fillStyle = "#FFFF00";
+  gameAreaContext.fillStyle = "#228B22";
   gameAreaContext.fillRect(x * cellWidth, y * cellWidth, cellWidth, cellWidth);
 }
 function createEgg(x, y) {
