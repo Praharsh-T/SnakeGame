@@ -1,0 +1,9 @@
+body {
+  background-color: lightyellow;
+}
+canvas {
+  background-color: white;
+  border-radius: 20 px;
+  box-shadow: 3 px 5 px 6 px black;
+  margin-right: 40 px;
+}
